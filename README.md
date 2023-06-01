@@ -66,3 +66,20 @@ python manage.py migrate
 python manage.py runserver
 ```
 Now you can run the development server and access the form page at http://localhost:8000/suggestion/form/. After submitting the form, it will redirect to the thank you page and display the suggestions in a table at http://localhost:8000/suggestion/table/.
+
+## Deleting all the entries from the database
+Step 1:Open the Django shell
+```
+python manage.py shell
+```
+Step 2:Import the models from the app
+
+```
+from suggestion_app.models import Suggestion
+```
+
+Step 3:Run the following command to delete all objects from the model
+```
+Suggestion.objects.all().delete()
+```
+You can also delete selective responses by removing the all() method.
