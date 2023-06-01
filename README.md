@@ -83,3 +83,8 @@ Step 3:Run the following command to delete all objects from the model
 Suggestion.objects.all().delete()
 ```
 You can also delete selective responses by removing the all() method.
+
+## Images of the webpage
+![Suggestion Box Page](suggestionapp_img/suggestion_box.png)
+![Suggestion table Page](suggestionapp_img/suggestion_table.png)
+![Thank_You Page](suggestionapp_img/thank_you.png)
