@@ -8,6 +8,11 @@ Suggestion Box Page
 ## Description
 The Suggestion-Box-Page is a web application that allows employees to submit suggestions and resolutions. The system stores the suggestions and resolutions in a backend database and provides a user interface to view and manage the submitted suggestions.
 
+## Images of the webpage
+![suggestion_box](https://github.com/dpmaharathy/Suggestion-Box-Page/assets/96619281/b1154875-2c0b-454c-a0c4-eeb9a08acc72)
+![suggestion_table](https://github.com/dpmaharathy/Suggestion-Box-Page/assets/96619281/689e244e-80f0-45d3-9d30-cddcc5330560)
+![thank_you](https://github.com/dpmaharathy/Suggestion-Box-Page/assets/96619281/d005a2da-365c-4f6b-af70-3e483081843f)
+
 ## Features
 Submit suggestions with corresponding employee ID and resolution.
 View submitted suggestions in a table format.
@@ -84,7 +89,4 @@ Suggestion.objects.all().delete()
 ```
 You can also delete selective responses by removing the all() method.
 
-## Images of the webpage
-![suggestion_box](https://github.com/dpmaharathy/Suggestion-Box-Page/assets/96619281/b1154875-2c0b-454c-a0c4-eeb9a08acc72)
-![suggestion_table](https://github.com/dpmaharathy/Suggestion-Box-Page/assets/96619281/689e244e-80f0-45d3-9d30-cddcc5330560)
-![thank_you](https://github.com/dpmaharathy/Suggestion-Box-Page/assets/96619281/d005a2da-365c-4f6b-af70-3e483081843f)
+
