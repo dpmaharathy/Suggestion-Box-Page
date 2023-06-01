@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Suggestion Form</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="{% static 'ts.png' %}" alt="Company Logo">
+            <h2 class="company-name">Talent Serve</h2>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>Submit Suggestion</h3>
+        <form method="post" action="{% url 'suggestion_form' %}">
+            {% csrf_token %}
+            <input type="text" name="employee_id" placeholder="Employee ID" required>
+            <textarea name="suggestion" placeholder="Suggestion" required></textarea>
+            <textarea name="resolution" placeholder="Resolution" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="{% url 'suggestion_table' %}"><button>View Suggestions</button></a>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Suggestion Box</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+        <img src="{% static 'ts.png' %}" alt="Company Logo">
+        <h2 class="company-name">Talent Serve</h2>
+    </div>
+  </nav>
+
+  <div class="container">  
+    <form id="suggestion_box" action="{% url 'suggestion_form' %}" method="post">
+      {% csrf_token %}
+      <h3>Suggestion box</h3>
+      <h5>Please drop down your suggestions and corresponding resolutions below</h5>
+      <div class="form-group">
+        <label for="employee_id">Employee ID</label>
+        <input type="text" id="employee_id" name="employee_id" required>
+      </div>
+      <div class="form-group">
+        <label for="suggestion_text">Suggestion</label>
+        <textarea id="suggestion_text" name="suggestion" placeholder="Enter your suggestion" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="resolution_text">Resolution</label>
+        <textarea id="resolution_text" name="resolution" placeholder="Enter your resolution"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit_button">Submit</button>
+      </div>
+    </form>
+    <a href="{% url 'suggestion_table' %}"><button id="view_suggestions_button">View Suggestions</button></a>
+
+  </div>
+
+  <!-- <script>
+    document.getElementById("suggestion_box").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Get form values
+      var suggestion = document.getElementById("suggestion_text").value;
+      var employeeID = document.getElementById("employee_id").value;
+      var resolution = document.getElementById("resolution_text").value;
+      
+      // Display alert with form data
+      var message = "Suggestion: " + suggestion + "\nEmployee ID: " + employeeID + "\nResolution: " + resolution;
+      // alert(message);
+    //   function hrefFunction(){
+    //             windows.location.href = "thankyou.html";
+    //         }
+      
+      // Reset form
+      document.getElementById("suggestion_box").reset();
+      document.getElementById("submit_button").addEventListener("click",redirectFunction());
+
+      // function redirectFunction()
+      // {
+      //   window.location.href="thankyou.html";
+        
+      // }
+    });
+  </script> -->
+</body>
+</html>

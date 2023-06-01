@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	color: #F6F6F6;
+}
+
+
+nav {
+    border-bottom: 4px solid #000;
+    background-color: black;
+}
+
+/* Adjust the styling for the navigation container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style the company logo */
+.nav-container img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+/* Style the company name */
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background: #393E46;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container h3 {
+    color: #f6f6f6;
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+	/* max-width: 500px; */
+	padding-top:10%;
+	padding-bottom:7%;
+	text-align: center;
+}
+
+.container a button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0cf;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+	
+}
+
+.container a button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container a button:hover {
+    background: #09c;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container a button:focus {
+    outline: none;
+    box-shadow: none;
+}

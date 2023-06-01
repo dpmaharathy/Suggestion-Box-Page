@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Thank You</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylety.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="{% static 'ts.png' %}" alt="Company Logo">
+            <h2 class="company-name">Talent Serve</h2>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>Thank you for your response!</h3>
+        <a href="{% url 'suggestion_form' %}"><button>Fill Another Response</button></a>
+    </div>
+</body>
+</html>

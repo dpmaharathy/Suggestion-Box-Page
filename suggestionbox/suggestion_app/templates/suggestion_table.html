@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Suggestion Table</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styleb.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="{% static 'ts.png' %}" alt="Company Logo">
+            <h2 class="company-name">Talent Serve</h2>
+        </div>
+    </nav>
+    <div class="container">
+        <h3>Suggestion Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Suggestion</th>
+                    <th>Resolution</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in suggestion %}
+                <tr>
+                    <td>{{ s.employee_id }}</td>
+                    <td>{{ s.suggestion }}</td>
+                    <td>{{ s.resolution }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

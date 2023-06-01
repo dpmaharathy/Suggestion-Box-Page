@@ -1,0 +1,185 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	color: #F6F6F6;
+}
+
+/* Add a thick border to the navigation bar */
+nav {
+	border-bottom: 4px solid #000;
+	background-color: black;
+}
+
+/* Adjust the styling for the navigation container */
+.nav-container {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+/* Style the company logo */
+.nav-container img {
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
+}
+
+/* Style the company name */
+
+.company-name {
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+}
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 30px;
+	color: #777;
+	background: #393E46;
+}
+
+.container {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#suggestion_box textarea,
+#suggestion_box button[type="submit"] {
+	font: 400 16px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#suggestion_box {
+	background: #222831;
+	padding: 25px;
+	margin: 50px 0;
+	box-shadow: 0 0 15px 5px white;
+	border: 1px solid #999;
+}
+
+#suggestion_box h3 {
+	color: #f6f6f6;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#suggestion_box h5 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 10px;
+	color: #F6F6F6;
+
+}
+
+fieldset {
+	border: none;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#suggestion_box textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #fff;
+	margin: 0 0 5px;
+	padding: 10px;
+    color:black;
+}
+#suggestion_box #employee_id
+{
+    color:black;
+}
+#suggestion_box textarea:hover {
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #aaa;
+}
+
+#suggestion_box button[type="submit"] {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: #0cf;
+	color: #fff;
+	margin: 0 0 5px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#suggestion_box button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#suggestion_box input:focus, #suggestion_box textarea:focus {
+	outline:0;
+	border:0.1px solid #999;
+    color:black;
+}
+
+#suggestion_box button[type="submit"]:hover {
+	background: #09c;
+	transition: background-color 0.3s ease-in-out;
+}
+
+#suggestion_box button[type="submit"]:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+
+#view_suggestions_button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0cf;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#view_suggestions_button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#view_suggestions_button:hover {
+    background: #09c;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#view_suggestions_button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+:-moz-placeholder {
+	color: #888;
+}
+
+::-moz-placeholder {
+	color: #888;
+}
+
+:-ms-input-placeholder {
+	color: #888;
+}
+

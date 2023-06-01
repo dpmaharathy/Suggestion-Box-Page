@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	color: #F6F6F6;
+}
+
+
+/* Add a thick border to the navigation bar */
+nav {
+    border-bottom: 4px solid #000;
+    background-color: black;
+}
+
+/* Adjust the styling for the navigation container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Style the company logo */
+.nav-container img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+/* Style the company name */
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background: #393E46;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+
+.container h3 {
+    color: #f6f6f6;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #222831;
+    color: #f6f6f6;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    max-width: 200px; /* Limit the width of the cell */
+    word-break:break-all;
+    color:black;
+    text-align: center;
+    font-weight:bold;
+    
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
