@@ -85,6 +85,6 @@ Suggestion.objects.all().delete()
 You can also delete selective responses by removing the all() method.
 
 ## Images of the webpage
-![Suggestion Box Page](relative/suggestionapp_img/suggestion_box.png)
-![Suggestion table Page](relative/suggestionapp_img/suggestion_table.png)
-![Thank_You Page](relative/suggestionapp_img/thank_you.png)
+![Suggestion Box Page](/suggestionapp_img/suggestion_box.png)
+![Suggestion table Page](/suggestionapp_img/suggestion_table.png)
+![Thank_You Page](/suggestionapp_img/thank_you.png)
