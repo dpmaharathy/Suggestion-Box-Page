@@ -31,7 +31,7 @@ git clone https://github.com/dpmaharathy/Suggestion-Box-Page.git
 ## Change into the project directory:
 
 ```
-cd Suggestion-Box-Page
+cd Suggestion-Box-Page/suggestionbox
 ```
 
 ## Create a virtual environment:
